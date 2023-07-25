@@ -1,6 +1,6 @@
 #main {
     display: grid;
-    grid-template-columns: 130px 1fr
+    grid-template-columns: 170px 1fr
 }
 #main ul {
     margin: 0;
@@ -9,13 +9,10 @@
 }
 #main ul li {
     display: inline-block; width: 150px; text-align: center;
-    padding-top: 15.2px;
+    padding-top: 40.4px; padding-left: 20px;
 }
 #main ul li a {
-    color: white;
-}
-#gr {
-    width: 100%;
+    color: white; font-size: 18px;
 }
 
 
@@ -42,12 +39,20 @@
     background-color: rgb(144, 144, 144);
 }
 .box {
-    border: 5px solid rgb(49, 133, 73);
-    padding: 10px;
-    margin: 10px;
-    display: block;
-    margin-left: 15px;
-    font-size: 15px;
+    border: 5px solid rgb(49, 133, 73); padding: 10px; margin: auto;
+    display: block; width: 50%;
+    left: 50%;
+}
+@media all and (max-width : 800px) {
+    .box {
+    width: 90%;
+    }
+}
+.inbox {
+    width: 100%;
+}
+.boxname {
+    margin-top: 0;
 }
 .sub {
     font-size: 20px;
@@ -55,12 +60,14 @@
     background-color: rgb(230, 233, 236);
     display: block;
     margin: 20px;
-    padding-top: 20px; padding-bottom: 20px; padding-left: 7px;
+    padding-top
+    : 20px; padding-bottom: 20px; padding-left: 7px;
 }
-.sm {
-    padding-left: 20px;
-    font-size: 15px;
-}
+
+
+
+
+
 body {
     margin: 0;
 }
@@ -70,4 +77,8 @@ a {
 }
 li {
     list-style: none;
+}
+th, td {
+    font-size: 17px;
+    text-align: left;
 }
