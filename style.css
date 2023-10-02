@@ -97,4 +97,6 @@ li {
 th, td {
     font-size: 17px;
     text-align: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
