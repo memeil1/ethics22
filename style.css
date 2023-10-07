@@ -2,7 +2,6 @@
     width: 100%;
     position: fixed; top: 0; left: 0; right: 0;
     background-color: white;
-    border-bottom: 1px solid black;
 }
 #main-menu {
     display: table;
@@ -41,7 +40,8 @@
     font-size: 22px;
 }
 .main-section {
-    border: 1px solid black;
+    border: 1px;
+    border-radius: 7px;
     padding: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -63,10 +63,67 @@
 #content-container {
     display: grid;
     grid-template-columns: 216px 1fr;
-    width: 1080px;
-    margin-top: 10px;
+    max-width: 1080px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+#aside-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15pt;
+    margin-right: 30px;
+}
+#side-menu-name {
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#side-menu {
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px;
+    border-radius: 7px;
+    background-color: white;
+    margin-top: 10px;
+}
+#side-menu tr {
+    height: 36px;
+}
+#side-menu td {
+    font-size: 16px;
+    font-weight: bold;
+    border-top: 1px solid rgb(183, 183, 183);
+    border-bottom: 1px solid rgb(183, 183, 183);
+}
+#side-menu tr td a {
+    padding-left: 5px;
+    font-size: 16px;
+}
+.monday, .tueday, .wedday, .thuday, .exday {
+    text-align: center;
+}
+.monday {
+    background-color: rgb(212, 196, 143);
+}
+.tueday {
+    background-color: rgb(174, 200, 132);
+}
+.wedday {
+    background-color: rgb(124, 161, 172);
+}
+.thuday {
+    background-color: rgb(168, 154, 188);
+}
+.exday {
+    background-color: rgb(224, 189, 210);
 }
 
 #date-container {
@@ -74,7 +131,8 @@
     flex-direction: column;
 }
 .date {
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: 17px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
@@ -82,25 +140,10 @@
     border-bottom: 1px solid black;
 }
 #date-container img {
-    width: 180px; height: 180px; 
+    width: 200px; height: 200px; 
 }
-#mon-container {
-    display: flex;
-    flex-direction: column;
-}
-#tue-container {
-    display: flex;
-    flex-direction: column;
-}
-#wed-container {
-    display: flex;
-    flex-direction: column;
-}
-#tue-container {
-    display: flex;
-    flex-direction: column;
-}
-#ex-container {
+
+#date-sub-container {
     display: flex;
     flex-direction: column;
 }
@@ -113,16 +156,68 @@
     margin: 20px;
 }
 
+#sub-info, #sub-points, .sub-details {
+    background-color: white;
+    border: 1px;
+    border-radius: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+#sub-info {
+    display: flex;
+    flex-direction: row;
+}
+#sub-info img {
+    margin-left: 12px;
+    width: 140px; height: 140px;
+}
+#info-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+#sub-time, #sub-contact {
+    color: rgb(122, 122, 122);
+}
+#point-box {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 1fr;
+}
+#attendance, #assignment, #exam {
+    border: 1px;
+}
+#attendance {
+    background-color: rgb(174, 212, 154);
+    border-radius: 10px 0 0 10px;
+    width: 20%;
+}
+#assignment {
+    background-color: rgb(252, 252, 171);
+    width: 20%;
+}
+#exam {
+    background-color: rgb(255, 201, 201);
+    border-radius: 0 10px 10px 0 ;
+    width: 60%;
+}
+
 #footer {
-    border-top: 1px solid black;
     padding-top: 10px;
     padding-left: 10px;
     font-size: 10px;
+    margin-top: 10px;
+    background-color: white;
 }
 
 body {
     margin: 0;
     padding-top: 120px;
+    background-color: rgb(240, 240, 240);
 }
 a {
     color: black;
@@ -133,6 +228,9 @@ img {
 }
 li {
     list-style: none;
+}
+section {
+    background-color: white;
 }
 th, td {
     font-size: 17px;
