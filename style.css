@@ -233,6 +233,24 @@
 #point-box2 #exam {
     width: 30%;
 }
+#point-box3 #attendance {
+    width: 20%;
+}
+#point-box3 #assignment {
+    width: 50%;
+}
+#point-box3 #exam {
+    width: 30%;
+}
+#point-box5 #attendance {
+    width: 20%;
+}
+#point-box5 #assignment {
+    width: 70%;
+}
+#point-box5 #exam {
+    width: 10%;
+}
 .sub-box-name {
     font-weight: bold;
     font-size: 16px;
@@ -255,7 +273,7 @@
 #footer {
     padding-top: 10px;
     padding-left: 10px;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 10px;
     border-top: 1px solid black;
 }
