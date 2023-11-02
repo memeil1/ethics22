@@ -2,6 +2,7 @@
     width: 100%;
     position: fixed; top: 0; left: 0; right: 0;
     background-color: white;
+    border: 1px solid black;
 }
 #main-menu {
     display: table;
@@ -191,8 +192,7 @@
 #point-box4, #point-box5, #point-box6, 
 #point-box7, #point-box8, #point-box9, 
 #point-box10, #point-box11, #point-box12 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     margin-right: 30px;
     margin-bottom: 15px;
 }
@@ -215,41 +215,38 @@
     background-color: rgb(255, 201, 201);
     border-radius: 0 10px 10px 0 ;
 }
-#point-box1 #attendance {
-    width: 20%;
+#point-box1 {
+    grid-template-columns: 20% 20% 60%;
 }
-#point-box1 #assignment {
-    width: 20%;
+#point-box2 {
+    grid-template-columns: 30% 40% 30%;
 }
-#point-box1 #exam {
-    width: 60%;
+#point-box3 {
+    grid-template-columns: 10% 50% 40%;
 }
-#point-box2 #attendance {
-    width: 30%;
+#point-box4 {
+    grid-template-columns: 20% 70% 10%;
 }
-#point-box2 #assignment {
-    width: 40%;
+#point-box5 {
+    grid-template-columns: 10% 46% 44%;
 }
-#point-box2 #exam {
-    width: 30%;
+#point-box6 {
+    grid-template-columns: 15% 75% 10%;
 }
-#point-box3 #attendance {
-    width: 20%;
+#point-box7 {
+    grid-template-columns: 10% 20% 70%;
 }
-#point-box3 #assignment {
-    width: 50%;
+#point-box8 {
+    grid-template-columns: 10% 20% 70%;
 }
-#point-box3 #exam {
-    width: 30%;
+#point-box9 {
+    grid-template-columns: 10% 60% 30%;
 }
-#point-box5 #attendance {
-    width: 20%;
+#point-box10 {
+    grid-template-columns: 10% 80% 10%;
 }
-#point-box5 #assignment {
-    width: 70%;
-}
-#point-box5 #exam {
-    width: 10%;
+#point-box11 {
+    grid-template-columns: 20% 60% 20%;
 }
 .sub-box-name {
     font-weight: bold;
