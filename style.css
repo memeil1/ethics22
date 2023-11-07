@@ -52,6 +52,10 @@
 }
 #main table {
     width: 100%;
+    border-collapse: collapse;
+}
+#main tr {
+    border-bottom: 1px solid black;
 }
 .warning td {
     color: red;
@@ -247,6 +251,9 @@
 }
 #point-box11 {
     grid-template-columns: 20% 60% 20%;
+}
+#point-box12 {
+    grid-template-columns: 10% 30% 60%;
 }
 .sub-box-name {
     font-weight: bold;
